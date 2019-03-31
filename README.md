@@ -11,7 +11,9 @@
 
 ### 清华镜像下载 miniconda安装
 
-下载地址[清华miniconda镜像清单](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)
+下载地址
+
+[清华miniconda镜像清单](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)
 
 [最新windows版本](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe)
 
@@ -19,6 +21,8 @@
 
 创建 `c:\Users\%用户名%\.condarc` 文本文件
 写入下面的配置
+
+*注*: windows 资源管理器不允许创建 `.`开头的文件,可以先保存为`condarc.txt` 然后命令行中进行重命名`ren condarc.txt ren .condarc`
 ```
 channels:
   - http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
@@ -78,7 +82,7 @@ jupyter notebook
 ## 开始了解python
 
 ### 概要
-1. python(指python编程语言)是一种强格式的脚本语言,即 python 代码有`强的格式要求`,python是在`执行时进行解释运行`
+1. python(指python编程语言)是一种强格式的脚本语言,即 python 代码有`强格式要求`,python是在`执行时进行解释运行`
 2. python(指python编程环境)是目前较好的非计算机专业学习和进行数据处理分析的语言工具.**一般我们不随意断言**. 因为python有目前较为全面的工具包(各种由其他人员提供的预先编写好的脚本片段)涵盖数学计算\生物分析\网络操作服务...等各个方面,并且基础入门相对容易.需要**注意**的是 不建议用python作为工业信息系统生产开发.
 3. 文件 python 的文件扩展名`.py`.在unix\*系统下 一般由`#!/bin/python`来定义解析器,文件可以没有扩展名.
 4. 需要注意前面环境搭建介绍使用的jupyter 生成的文件是`json`格式,而非标准python脚本
